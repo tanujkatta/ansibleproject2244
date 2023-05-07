@@ -1,0 +1,11 @@
+---
+      - name: services 
+        hosts: vlab1
+        tasks: 
+           - name: sshd
+             service: name=sshd state=restarted enabled=yes 
+             tags: sshd
+             register: sshd
+           - debug: var=sshd
+
+[A
