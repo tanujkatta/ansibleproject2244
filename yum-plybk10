@@ -1,0 +1,5 @@
+- name: httpd
+             service: name=httpd state=restarted enabled=yes
+             register: httpd
+           - debug: var=httpd
+             tags: httpd
