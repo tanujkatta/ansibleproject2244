@@ -1,0 +1,5 @@
+- name: ntp
+             service: name=ntpd state=restarted enabled=yes
+             register: ntpd
+           - debug: var=ntpd
+             tags: ntpd
