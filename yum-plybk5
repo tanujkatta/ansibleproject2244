@@ -1,0 +1,3 @@
+- name: ftp
+         yum: name=ftp state=present
+         tags: ftp
