@@ -1,0 +1,5 @@
+- name: samba
+             service: name=smb state=restarted enabled=yes
+             register: smb
+           - debug: var=smb
+             tags: smb
