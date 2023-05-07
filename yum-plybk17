@@ -1,0 +1,5 @@
+- name: iptables
+             service: name=iptables state=stopped 
+             register: iptables
+           - debug: var=iptables
+             tags: iptables
