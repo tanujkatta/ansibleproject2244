@@ -1,0 +1,7 @@
+---
+   - name: pkgs installation
+     hosts: vlab1
+     tasks: 
+       - name: httpd
+         yum: name=httpd state=present
+         tags: httpd
