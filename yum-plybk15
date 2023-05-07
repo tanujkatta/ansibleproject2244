@@ -1,0 +1,5 @@
+- name: autofs
+             service: name=autofs state=restarted enabled=yes
+             register: autofs
+           - debug: var=autofs
+             tags: autofs
