@@ -1,0 +1,5 @@
+- name: nfs
+             service: name=nfs state=restarted enabled=yes
+             register: nfs
+           - debug: var=nfs
+             tags: nfs
