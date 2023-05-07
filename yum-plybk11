@@ -1,0 +1,5 @@
+- name: vsftpd
+             service: name=vsftpd state=restarted enabled=yes
+             register: vsftpd
+           - debug: var=vsftd
+             tags: vsftpd
