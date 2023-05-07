@@ -1,0 +1,3 @@
+- name: ntp
+         yum: name=ntp state=present
+         tags: ntp
