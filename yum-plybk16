@@ -1,0 +1,5 @@
+- name: rsyslog
+             service: name=rsyslog state=restarted enabled=yes
+             register: rsyslog
+           - debug: var=rsyslog
+             tags: rsyslog
